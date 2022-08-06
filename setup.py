@@ -28,7 +28,7 @@ with open('README.md') as fp:
   _LONG_DESCRIPTION = fp.read()
 
 _jax_version = '0.2.27'
-_jaxlib_version = '3.0.14'
+_jaxlib_version = '0.3.14'
 
 setuptools.setup(
     name='t5x',
