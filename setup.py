@@ -28,7 +28,7 @@ with open('README.md') as fp:
   _LONG_DESCRIPTION = fp.read()
 
 _jax_version = '0.2.27'
-_jaxlib_version = '0.3.14'
+_jaxlib_version = '0.1.60'
 
 setuptools.setup(
     name='t5x',
@@ -53,7 +53,7 @@ setuptools.setup(
         'flax @ git+https://github.com/google/flax#egg=flax',
         'gin-config',
         f'jax >= {_jax_version}',
-        f'jaxlib >= {_jaxlib_version}',
+        f'jaxlib == {_jaxlib_version}',
         'numpy',
         'orbax',
         'seqio-nightly',
